@@ -110,4 +110,4 @@ const requestListener = (req, res) => {
 }
 
 const server = http.createServer(requestListener);
-server.listen(3006); 
+server.listen(process.ent.PORT || 3006); 
