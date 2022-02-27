@@ -43,7 +43,7 @@ const requestListener = (req, res) => {
             }
         })
     }
-    else if (req.url === "/todos/" && req.method === "DELETE") {
+    else if (req.url === "/todos" && req.method === "DELETE") {
 
         todos.length = 0;
         res.writeHead(200, headers)
